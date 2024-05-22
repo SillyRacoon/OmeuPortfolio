@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('./Imagens/outgradient2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #090909;
+            /*letter color */
+        }
+
+
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffffee;
+            /*inside background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            position: relative;
+            background-image: url('./Imagens/gradient2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #000305;
+            /* header line*/
+            position: relative;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: -50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #000000;
+            margin: 0;
+            margin-top: -30px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #152244;
+            border-bottom: 2px solid #060606;
+            /* rest of the lines*/
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #152244;
+            margin-bottom: 10px;
+        }
+
+        .contact-details-box {
+            background-color: rgba(201, 197, 216, 0.821);
+            /* header box*/
+            padding: 15px;
+            border-radius: 10px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            /* box shadow*/
+        }
+
+        .contact-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .contact-details li {
+            margin-bottom: 8px;
+        }
+
+        .contact-details a {
+            color: #3498db;
+            text-decoration: none;
+            border: 1px solid #467cee;
+            border-radius: 5px;
+            padding: 5px 10px;
+            background-color: #467cee;
+            color: #fff;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .contact-details a:hover {
+            background-color: #4ecfe6;
+            /*email hover button*/
+            border-color: #4ecfe6;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .section li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .section li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #4220ec;
+            /* small dots color*/
+            font-size: 1.5em;
+            line-height: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .section p {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #4220ec;
+            /*footer email color*/
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .box {
+            border: 2px solid #36d121;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .glass {
+            background: rgba(203, 198, 211, 0.696);
+            /* rest of the boxes background*/
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            border: 1px solid rgba(8, 0, 0, 0.2);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .circle {
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            border-radius: 60%;
+            margin-left: 6px;
+        }
+
+        /* level circles for languages*/
+
+        .filled {
+            background-color: #2d34b8;
+        }
+
+        /*fill level circles color*/
+
+        .empty {
+            background-color: #fff;
+            border: 1px solid #f8f7fa;
+        }
+
+        .flag {
+    background-image: url('portugueseflag.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+        .section_glass_box {
+
+
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-radius: 20px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+             }
+            
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="contact-details-box section_glass_box">
+                <ul class="contact-details">
+                    <li>Email:<a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafasoares1950@gmail.com"
+                            target="_blank">rafasoares1950@gmail.com</a></li>
+                            <p><span class="flag">Phone number:</span> (+351)938689901</p>
+                    
+                    <li>Address: Lisboa, Portugal</li>
+                </ul>
+            </div>
+            <img src="./Imagens/IMG-20240304-WA0000.jpg" alt="Profile Picture">
+            <h1>Rafael Soares</h1>
+        </div>
+
+        <div class="section glass box section_glass_box">
+            <h2>Bio</h2>
+            <ul class="Bio">
+             Hello, I'm Rafael, a Trainee at CGI based in Lisboa, altough i really enjoy cars and bikes, my main passion is learning, so i decided to try something diferent,
+             <ul class="Bio">
+                as i mentioned i'm currently a trainee at CGI wich is an IT and business consultant, due to studying and taking a CTeSP in information systems management 
+             </ul>
+             
+             <ul class="Bio">
+                my role at cgi now as a trainee is to learn Angular.
+             </ul>
+
+            
+            <ul class="Bio">
+            In resume i believe in continuous learning and am always seeking out new challenges and opportunities to grow.
+            </ul>
+        </div>
+
+
+        <div class="section glass box section_glass_box">
+            <h2>Professional Experience</h2>
+            <p><strong><a href="https://www.cgi.com/portugal/pt-pt" target="_blank" style="color: black;"><img src="./Imagens/cgi.png" alt="CGI Logo" style="width: 20px; height: auto; vertical-align: middle;">  Trainee at CGI</a></strong></p>
+            <p><strong>March 2024 - Present</strong></p>
+            <ul class="experience-details">
+                <li>Developed websites using HTML, CSS, and JavaScript.</li>
+            </ul>
+        </div>
+
+        <div class="section glass box section_glass_box">
+            <h2>Education</h2>
+            <h3>12.º em Linguas e Humanidades</h3>
+            <p><strong><a href="https://aeddinislisboa.wixsite.com/aeddinis/d-dinis" target="_blank" style="color: black;"><img src="./Imagens/aedd.png" alt="AEDD Logo" style="width: 20px; height: auto; vertical-align: middle;">  Escola secundária D.Dinis, Lisboa</a></strong></p>
+            <p>Graduated: June 2022</p>
+            <h4>CTeSP em Gestão de sistemas de informação</h4>
+            <p><strong><a href="https://www.ipluso.pt/" target="_blank"><img src="./Imagens/ipluso.png" alt="IPluso Logo" style="width: 20px; height: auto; vertical-align: middle;"></a> <a href="https://www.ipluso.pt/" target="_blank" style="color: black;">IPluso</a></strong></p>
+            <p>Started: October 2022</p>
+            <p>Graduated: September 2024 (expected)</p>
+        </div>
+
+        <div class="section glass box section_glass_box">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>Programming Languages: HTML, CSS, JavaScript, Python</li>
+                <li>Frameworks and Libraries: Angular, Node.js</li>
+                <li>Excellent Communication and Teamwork Abilities</li>
+            </ul>
+        </div>
+
+
+        <div class="section glass box section_glass_box">
+            <h2>Languages</h2>
+            <ul>
+                <li>
+                    Portuguese
+                    <span class="circle filled"></span>
+                    <span class="circle filled"></span>
+                    <span class="circle filled"></span>
+                    <span class="circle filled"></span>
+                    <span class="circle filled"></span>
+                </li>
+                <li>
+                    English
+                    <span class="circle filled"></span>
+                    <span class="circle filled"></span>
+                    <span class="circle filled"></span>
+                    <span class="circle filled"></span>
+                    <span class="circle empty"></span>
+                </li>
+                <li>
+                    Spanish
+                    <span class="circle filled"></span>
+                    <span class="circle filled"></span>
+                    <span class="circle filled"></span>
+                    <span class="circle empty"></span>
+                    <span class="circle empty"></span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="section glass box section_glass_box">
+            <h2>Contact</h2>
+            <p>If you would like to get in touch, please feel free to email me at <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=rafasoares1950@gmail.com"
+                    target="_blank">rafasoares1950@gmail.com</a>.</p>
+            <p><img src="./Imagens/portugueseflag.png" alt="Portuguese Flag"
+                    style="width: 20px; height: auto; vertical-align: middle;"> Phone number: (+351)938689901</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
